@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs duperemove weekly
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+RandomizedDelaySec=24hours
+
+[Install]
+WantedBy=timers.target

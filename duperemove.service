@@ -1,0 +1,12 @@
+[Unit]
+Description=Runs duperemove on all supported and mounted filesystems
+Wants=multi-user.target
+After=multi-user.target
+
+[Service]
+Type=oneshot
+Nice=19
+IOSchedulingClass=idle
+ExecStart=/usr/local/bin/duperemove-service.sh
+Restart=on-failure
+RestartSec=5s
