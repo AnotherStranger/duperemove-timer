@@ -1,6 +1,7 @@
 # Duperemove Timer
 
-This repository offers a Systemd timer for utilizing duperemove.
+This repository offers a Systemd timer for utilizing 
+[duperemove](https://github.com/markfasheh/duperemove).
 
 ## Installation
 
