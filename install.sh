@@ -20,8 +20,8 @@ fi
 
 # Install duperemove service and timer files
 install -m 755 duperemove-service.sh /usr/local/bin/duperemove-service.sh
-install -m 755 duperemove.service /etc/systemd/system/duperemove.service
-install -m 755 duperemove.timer /etc/systemd/system/duperemove.timer
+install -m 644 duperemove.service /etc/systemd/system/duperemove.service
+install -m 644 duperemove.timer /etc/systemd/system/duperemove.timer
 
 # Create directory for duperemove cache
 install -d /var/cache/duperemove
